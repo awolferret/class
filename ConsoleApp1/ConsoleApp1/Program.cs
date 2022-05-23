@@ -13,22 +13,22 @@ namespace ConsoleApp1
 
     class Player
     {
-        public int Health;
-        public int Mana;
-        public int Damage;
+        private int _health;
+        private int _mana;
+        private int _damage;
 
         public Player(int health, int mana, int damage)
         {
-            Health = health;
-            Mana = mana;
-            Damage = damage;
+            _health = health;
+            _mana = mana;
+            _damage = damage;
         }
 
         public void ShowInfo()
         {
-            Console.WriteLine($"Здоровье: {Health}");
-            Console.WriteLine($"Мана: {Mana}");
-            Console.WriteLine($"Урон: {Damage}");
+            Console.WriteLine($"Здоровье: {_health}");
+            Console.WriteLine($"Мана: {_mana}");
+            Console.WriteLine($"Урон: {_damage}");
         }
     }
 }
